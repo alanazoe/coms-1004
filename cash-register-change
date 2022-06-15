@@ -1,0 +1,36 @@
+/* Author: Alana Greenaway */
+
+import java.util.Scanner;
+
+public class Change {
+    
+    public static final void main(String[] args) {
+        
+       Scanner s= new Scanner(System.in);
+       System.out.print("Enter the total amount due (in pennies) ");
+       int d = s.nextInt();
+
+
+       Scanner a= new Scanner(System.in);
+       System.out.print ("Enter the amount recieved (in pennies) ");
+       int r = s.nextInt();
+
+       int c = r-d;
+
+       System.out.print(c/100);
+       System.out.println(" dollar(s)");
+
+       System.out.print((c%100)/25);
+       System.out.println(" quarter(s)");
+       
+       System.out.print(((c%100)% 25)/10);
+       System.out.println(" dime(s)");
+
+       System.out.print(((c%100)% 25)%10);
+       System.out.println(" pennies");
+        
+        
+    }
+    
+    
+}
