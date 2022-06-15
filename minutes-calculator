@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Minutes {
+    
+    public static final void main(String[] args) {
+    
+    Scanner s=new Scanner(System.in);
+    System.out.print("Choose a number of hours ");
+    int h = s.nextInt();
+
+    Scanner c= new Scanner(System.in);
+    System.out.print("Choose a number of days ");
+    int d = s.nextInt();
+
+    Scanner a= new Scanner(System.in);
+    System.out.print("Choose a number of weeks ");
+    int w = s.nextInt();
+
+    Scanner n= new Scanner(System.in);
+    System.out.print("Choose a number of years ");
+    int y = s.nextInt();   
+    
+    System.out.println((h*60.0)+(d*1440)+(w*10080)+(y*525600));
+
+    }
+    
+    
+}
