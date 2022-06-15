@@ -1,0 +1,28 @@
+/* Author: Alana Greenaway (azg2110) */
+
+import java.util.Scanner;
+
+public class F2C {
+    
+    public static final void main(String[] args) {
+        
+       Scanner s= new Scanner(System.in);
+
+       System.out.print("What is the temperature in Fahrenheit? ");
+       int f= s.nextInt();
+
+       System.out.print("The temperature in celsius is ");
+       
+       /*
+       Here I distributed out (f-32)*(5/9) to make it (5f/9)-(160/9). Since 5/9 is less than 1, 
+       truncation would always cause 5/9 to become 0 leading f-32 to be multiplied by 0 and 
+       the whole output to going to 0. I  fixed this by changing the order of operations!
+       */
+
+       System.out.println((5*f/9)-(160/9));
+        
+        
+    }
+    
+    
+}
