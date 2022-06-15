@@ -23,6 +23,6 @@ public class Minutes {
     System.out.println((h*60.0)+(d*1440)+(w*10080)+(y*525600));
 
     }
-    
+
     
 }
